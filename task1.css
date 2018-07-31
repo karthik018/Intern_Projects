@@ -1,0 +1,44 @@
+.item1 {grid-area: A;}
+.item2 {grid-area: B;}
+.item3 {grid-area: C;}
+.item4 {grid-area: D;}
+.item5 {grid-area: E;}
+.item6 {grid-area: F;}
+.item7 {grid-area: G;}
+.item8 {grid-area: H;}
+.item9 {grid-area: I;}
+.item10 {grid-area: J;}
+.item11 {grid-area: K;}
+.item12 {grid-area: L;}
+.item13 {grid-area: M;}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+        'A B C C C'
+        'A B D D D'
+        'A B E E E'
+        'F F F F F'
+        'G H J K K'
+        'G I J K K' ;
+    grid-gap: 18px;
+    padding: 6px;
+    height: 100%;
+}
+.grid-container2 {
+    display: grid;
+    grid-template-areas:
+        'L L L L L'
+        'M M M M M'
+        'M M M M M';
+    grid-gap: 6px;
+    padding: 6px; 
+}
+.grid-container2 > div {
+    border: 2px solid black;
+}
+.grid-container > div {
+    border: 2px solid black;
+    outline: 2px solid black;
+    outline-offset: 4px;
+}
